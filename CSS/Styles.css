@@ -1,79 +1,31 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&family=Outfit:wght@300;400;600&display=swap');*/
+:root{
+    /* Primary Colors */
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    /*Neutral*/
+    --mainBG: hsl(217, 54%, 11%);
+    --cardBG: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    border: 1px solid #eee;
 }
 body{
-    color: #eee;
-    background-color: #1b1b32;
-    font-family: 'Noto Sans Mono', monospace;
-}
-.card-container{
-    border: 1px solid #eee;
-    max-width: 400px;
-    width: 100%;
-    margin: auto;
-    max-height: 600px;
-    padding: 30px;
-}
-.img-div{
-    width: 100%;
-    height: 35%;
-}
-.img-equ{
-    max-width: 100%;
-}
-h1{
-    font-size: 26px;
-    text-align: center;
-}
-p{
-    text-align: center;
     font-size: 18px;
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--mainBG);
 }
-.description{
-    border-bottom: 0.5px solid #eee;
-}
-.description > p{
-    margin-bottom: 10px;
-}
-.card-info{
-text-align: center;
-display: flex;
-align-items: center;
-justify-content: center;
-}
-.clock-div{
-    margin: 10px;
-    width: 45%;
-}
-.ethereum-div{
-    width: 45%;
-}
-.left-time{
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    margin-left: 2px;
-}
-.clock-icon{
-    margin-right: 10px;
-}
-.ethereum-icon{
-    margin-right: 10px;
-}
-.ethereum{
-    font-family:Georgia, 'Times New Roman', Times, serif;
-}
-.card-avatar{
-display: flex;
-justify-content: center;
-align-items: center;
-width: 100%;
-}
-.avatar-img{
-    max-height: 75px;
-}
-.creator-name{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 300;
-    color: #eee;
+.card{
+    background-color: var(--cardBG);
+    display: flex;
+    position: absolute;
+    width: 300px;
+    height: 600px;
+    top: 0;
+    left: 0;
 }
