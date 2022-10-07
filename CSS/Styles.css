@@ -21,14 +21,16 @@ body{
     color: var(--white);
 }
 .card{
+    position: absolute;
+    width: 16em;
+    height: 28em;
+    top: 50%;
+    left: 50%;
+    margin-top: -14em;
+    margin-left: -8em;
     background-color: var(--cardBG);
     display: flex;
     flex-direction: column;
-    position: absolute;
-    width: 270px;
-    height: 470px;
-    top: 150px;
-    left: 500px;
     padding: 20px;
     border-radius: 2%;
     box-shadow: 5px 8px 16px hsl(250, 54%, 9%);
